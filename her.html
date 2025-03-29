@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Beautiful Memories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="her.css">
+</head>
+<body>
+    <!-- Entry Screen -->
+    <div id="entry-screen" class="fade-in">
+        <div class="hearts">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+        <h2>Our Beautiful Journey ❤️</h2>
+        <h3>Enter our special code to continue</h3>
+        <div class="input-container">
+            <input type="password" id="code-input" placeholder="Our Secret Code" autofocus>
+            <button onclick="checkCode()" id="enter-btn">Unlock Memories <i class="fas fa-heart"></i></button>
+        </div>
+        <p id="error-msg">Incorrect code, try again sweetheart</p>
+    </div>
+   
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Music Players -->
+        <div class="music-player-container">
+            <div class="music-player">
+                <h3><i class="fas fa-music"></i> Our Song 1</h3>
+                <audio id="song1" controls>
+                    <source src="I like you so much.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="player-controls">
+                    <button onclick="document.getElementById('song1').play()"><i class="fas fa-play"></i></button>
+                    <button onclick="document.getElementById('song1').pause()"><i class="fas fa-pause"></i></button>
+                    <button onclick="document.getElementById('song1').volume += 0.1"><i class="fas fa-volume-up"></i></button>
+                    <button onclick="document.getElementById('song1').volume -= 0.1"><i class="fas fa-volume-down"></i></button>
+                </div>
+            </div>
+            
+            <div class="music-player">
+                <h3><i class="fas fa-music"></i> Our Song 2</h3>
+                <audio id="song2" controls>
+                    <source src="dil kyu ye mera.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="player-controls">
+                    <button onclick="document.getElementById('song2').play()"><i class="fas fa-play"></i></button>
+                    <button onclick="document.getElementById('song2').pause()"><i class="fas fa-pause"></i></button>
+                    <button onclick="document.getElementById('song2').volume += 0.1"><i class="fas fa-volume-up"></i></button>
+                    <button onclick="document.getElementById('song2').volume -= 0.1"><i class="fas fa-volume-down"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-hearts" id="floatingHearts"></div>
+        
+        <div class="circle pulse">
+            <p>Our<br>Memories</p>
+        </div>
+
+        <!-- Memory Sections -->
+        <div class="timeline">
+            <section class="memory">
+                <h2>Our First Date 💖</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="date.jpg" alt="First Date" loading="lazy" class="portrait">
+                        <p class="image-caption">MY CUTIEE😍🥰</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="date1.jpg" alt="First Date" loading="lazy">
+                        <p class="image-caption">OUR FIRST PHOTO😁😘</p>
+                    </div>
+                </div>
+                <p class="memory-description">The day we finally went on date...</p>
+            </section>
+            
+            <section class="memory">
+                <h2>Your Birthday 🎂</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="bday3.jpg" alt="Birthday Memory" loading="lazy" class="portrait">
+                        <p class="image-caption">Special moments</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="bday.jpg" alt="Birthday Memory" loading="lazy" class="portrait">
+                        <p class="image-caption">Birthday celebration</p>
+                    </div>
+                </div>
+                <p class="memory-description">The day when my beautiful princess,mera dil,meri jaan,meri pyari sundari is duniya me ayi thi and i thank to uncle aunty ki us din unka mood tha and mujhe meri best better and more best half mil gayi 🥺💙</p>
+            </section>
+        
+            <section class="memory">
+                <h2>The Co-Head Moment 🎖️</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="co-head.jpg" alt="Co-head Achievement" loading="lazy" class="portrait">
+                        <p class="image-caption">Achievement unlocked</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="co-head1.jpg" alt="Co-head Achievement" loading="lazy" class="portrait">
+                        <p class="image-caption">Proud moment</p>
+                    </div>
+                </div>
+                <p class="memory-description">Ye din, dang it was really challenging for my baby and usne pura sambhala khud se like khudd seeee even tho ye sab iske liye new tha,She still managed to do more than she needed to, and guess what look at the photos how beautiful smile she gave me aww my loveee ❤️ You are so so strong, capable and absolutely incredible my babbyyyy.🌟💛</p>
+            </section>
+        
+            <section class="memory">
+                <h2>Random Cute & Comedy Clicks 📸</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="random.jpg" alt="Random Click" loading="lazy" class="portrait">
+                        <p class="image-caption">Funny moment</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="random2.jpg" alt="Random Click" loading="lazy" class="portrait">
+                        <p class="image-caption">Being silly together</p>
+                    </div>
+                </div>
+                <p class="memory-description">HEHEHEHEHEHE nothing to say much but see how cute you loook allllllll the timeeeee even while doing work</p>
+            </section>
+        
+            <section class="memory">
+                <h2>First Time in a Theatre 🍿</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="theatre.jpg" alt="Theatre" loading="lazy" class="full-width">
+                        <p class="image-caption">Our first movie together</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="theatre1.jpg" alt="Theatre" loading="lazy" class="portrait">
+                        <p class="image-caption">Enjoying the show</p>
+                    </div>
+                </div>
+                <p class="memory-description">We didn't just watch a movie that day, we made a memory. And let's not forget, we were supposed to watch *Mufasa*, but ifykyk. 😆</p>
+            </section>
+        
+            <section class="memory">
+                <h2>Kala Ghoda Festival 🎨</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="kalaghoda.jpg" alt="Kala Ghoda Festival" loading="lazy" class="full-width">
+                        <p class="image-caption">Exploring together</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="kalaghoda1.jpg" alt="Kala Ghoda Festival" loading="lazy" class="portrait">
+                        <p class="image-caption">Art appreciation</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="kalaghoda2.jpg" alt="Kala Ghoda Festival" loading="lazy" class="portrait">
+                        <p class="image-caption">Special moments</p>
+                    </div>
+                </div>
+                <p class="memory-description">What a lovely day this was and some unforgettable moments like i hope you remember the thing we did on bridge 😆😆</p>
+            </section>
+        
+            <section class="memory">
+                <h2>The Handmade Ribbon Bouquet 🎀</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="surprise.jpg" alt="Ribbon Bouquet" loading="lazy" class="portrait">
+                        <p class="image-caption">Handmade with love</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="surprise1.jpg" alt="Ribbon Bouquet" loading="lazy" class="portrait">
+                        <p class="image-caption">Every ribbon tells a story</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="surprise2.jpg" alt="Ribbon Bouquet" loading="lazy" class="portrait">
+                        <p class="image-caption">Your reaction</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="surprise3.jpg" alt="Ribbon Bouquet" loading="lazy" class="portrait">
+                        <p class="image-caption">Precious memory</p>
+                    </div>
+                </div>
+                <p class="memory-description">I wanted to give you something special, something that wasn't just bought but made with love. Seeing your reaction made everything worth it and yes this was not that much but thik hai. 💝</p>
+            </section>
+        
+            <section class="memory">
+                <h2>Us in Traditional ❤️</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="traditional.jpg" alt="Traditional Outfit" loading="lazy" class="portrait">
+                        <p class="image-caption">Elegant beauty</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="traditional1.jpg" alt="Traditional Outfit" loading="lazy" class="portrait">
+                        <p class="image-caption">Traditional charm</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="traditional2.jpg" alt="Traditional Outfit" loading="lazy" class="portrait">
+                        <p class="image-caption">Radiant smile</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="traditional3.jpg" alt="Traditional Outfit" loading="lazy" class="portrait">
+                        <p class="image-caption">Beautiful together</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="traditional4.jpg" alt="Traditional Outfit" loading="lazy" class="portrait">
+                        <p class="image-caption">Special moments</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="traditional5.jpg" alt="Traditional Outfit" loading="lazy" class="portrait">
+                        <p class="image-caption">Memories to cherish</p>
+                    </div>
+                </div>
+                <p class="memory-description">You in that red saree? I was STUNNEEEDDDDDDDD. Meriiii aakheinn hein bhagwannnnnnn haayee allah, matlab ekdum se apne upar chipka liya tha aakhon ko mere heinnnnn matlab you looked like a dream, and I couldn't believe I was lucky enough to stand beside you. ❤️</p>
+            </section>
+        
+            <section class="memory">
+                <h2>Our First Time in Sanjay Gandhi National Park 🌿</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="sgnp.jpg" alt="National Park" loading="lazy" class="full-width">
+                        <p class="image-caption">Exploring nature</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="sngp1.jpg" alt="National Park" loading="lazy" class="portrait">
+                        <p class="image-caption">Adventure together</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="sgnp3.jpg" alt="National Park" loading="lazy" class="portrait">
+                        <p class="image-caption">Special moments</p>
+                    </div>
+                </div>
+                <p class="memory-description">Nothing went that good but atleast i was lucky enough to carry you behind and you gave me the last hug from back it was everything!!!!!</p>
+            </section>
+
+            <!-- Love Letter Section -->
+            <section id="love-letter" class="memory">
+                <h2>To My Aditi 💌</h2>
+                <div class="letter-container blurred">
+                    <div class="letter-paper">
+                        <div class="letter-content">
+                            <p>My Dearest, my one and only DEAR LOVE ADITI❤️</p>
+                            <p>Aap aur mai sirf do log nahi, ek kahani hain jo har din likhi ja rahi hai, naye ehsaason ke saath. Yeh yaadein sirf tasveerein nahi, hum dono ka ek chhupa hua jahaan hain, jisme sirf pyaar hai, muskurahat hai, aur woh lamhe hain jo sirf humein samajh aate hain like literally *hume*</p>
+                            <p>Aap meri zindagi ka woh hissa hain jise main har din aur bhi zyada pyaar karna chahta hoon aur karne bhi laga hu. Aapke bina sab suna, aur aapke saath sab mehsoos hota hai. Yeh surprise sirf ek surprise nahi, ek wada ha ki chahe kuch bhi ho, main hamesha aapke saath rahunga,jis Tarah in dino aapne mera sath diya bina hare , har ek memory ko aur bhi khoobsurat banata hua.</p>
+                            <p>I LOVE YOU SO MUCH MERI PASANDIDA AURAT, MERI CUTIEE ❤️ Bas aise hi muskurate rahiye, kyunki aapki muskurahat meri duniya hai. Aapse behtar kuch bhi nahi, aur aapse pyara koi bhi nahi.</p>
+                            <p class="signature">Forever yours,<br>Aditi's bebe</p>
+                            <img id="secret-photo" class="secret-photo" src="her.png" alt="Secret Memory">
+                        </div>
+                    </div>
+                </div>
+                <button id="open-letter-btn">Open My Heart ❤️</button>
+                <audio id="love-song" src="hotho se chu lu tumhe.mp3" loop></audio>
+            </section>
+    <script>
+          document.getElementById("open-letter-btn").addEventListener("click", function() {
+            const letterContainer = document.querySelector(".letter-container");
+            const letterContent = document.querySelector(".letter-content");
+            const song = document.getElementById("love-song");
+            const secretPhoto = document.getElementById("secret-photo");
+            
+            letterContainer.classList.toggle("blurred");
+            letterContent.classList.toggle("show");
+            secretPhoto.style.display = "block";
+            
+            if (song.paused) {
+                song.play();
+                this.textContent = "Pause Music & Hide Letter";
+            } else {
+                song.pause();
+                this.textContent = "Open My Heart ❤️";
+            }
+        });
+        // 1. PASSWORD PROTECTION FUNCTIONS
+        function checkCode() {
+            const code = document.getElementById("code-input").value.trim();
+            if (code === "15") { 
+                document.getElementById("entry-screen").classList.add("fade-out");
+                setTimeout(() => {
+                    document.getElementById("entry-screen").style.display = "none";
+                    document.getElementById("main-content").style.display = "block";
+                }, 500);
+            } else {
+                document.getElementById("error-msg").classList.add("show");
+            }
+        }
+        
+        // Enter key functionality for password
+        document.getElementById("code-input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                checkCode();
+            }
+        });
+    
+        // 2. LOVE LETTER FUNCTIONS
+        // Replace this section
+        function openLetter() {
+    const envelope = document.querySelector('.envelope');
+    const song = document.getElementById('love-song');
+    const letterContent = document.querySelector('.letter-content');
+
+    // Toggle envelope open/close
+    envelope.classList.toggle('open');
+
+    if (envelope.classList.contains('open')) {
+        // Play song and display full letter
+        song.play();
+        createHearts();
+        letterContent.classList.add('show-full-letter');
+    } else {
+        // Pause song and reset letter visibility
+        song.pause();
+        letterContent.classList.remove('show-full-letter');
+    }
+}
+        
+        // Create floating hearts animation
+        function createHearts() {
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.innerHTML = '❤️';
+                    heart.classList.add('heart-fall');
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+                    heart.style.opacity = Math.random();
+                    document.body.appendChild(heart);
+                    
+                    // Remove heart after animation
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 5000);
+                }, i * 300);
+            }
+        }
+        
+        // 3. AUTO-TRIGGER WHEN LETTER SCROLLED INTO VIEW
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const envelope = document.querySelector('.envelope');
+                    if (!envelope.classList.contains('open')) {
+                        envelope.classList.add('open');
+                        document.getElementById('love-song').play();
+                        createHearts();
+                    }
+                }
+            });
+        }, {threshold: 0.5});
+        
+        // Start observing the love letter section
+        const loveLetterSection = document.getElementById('love-letter');
+        if (loveLetterSection) {
+            observer.observe(loveLetterSection);
+        }
+
+        // 4. MUSIC PLAYER AUTO-PAUSE
+        document.getElementById('song1').addEventListener('play', function() {
+            document.getElementById('song2').pause();
+        });
+
+        document.getElementById('song2').addEventListener('play', function() {
+            document.getElementById('song1').pause();
+        });
+    </script>
+</body>
+</html>
